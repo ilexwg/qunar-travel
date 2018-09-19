@@ -273,3 +273,11 @@ proxyTable: { // 在proxyTable中增加如下代码
     },
 ```
 
+
+
+## 14. 安装better-scroll
+
+```bash
+npm install better-scroll --save
+```
+
