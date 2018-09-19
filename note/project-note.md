@@ -238,3 +238,11 @@ module.exports = {
 }
 ```
 
+
+
+## 11. 安装vue-awesome-swiper插件
+
+```bash
+npm install vue-awesome-swiper@2.6.7 --save
+```
+
