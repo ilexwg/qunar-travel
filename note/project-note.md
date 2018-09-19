@@ -246,3 +246,30 @@ module.exports = {
 npm install vue-awesome-swiper@2.6.7 --save
 ```
 
+
+
+## 12. 安装axios
+
+```bash
+npm install axios --save
+```
+
+
+
+## 13. mock文件
+
+将mock数据(如index.json等)放在static目录下的mock目录中, 用于模拟发送AJAX请求
+
+修改config目录下的index.js文件
+
+```javascript
+proxyTable: { // 在proxyTable中增加如下代码
+      '/api': {
+        target: 'http://localhost:8080',
+        pathRewrite: {
+          '^/api': '/static/mock'
+        }
+      }
+    },
+```
+
