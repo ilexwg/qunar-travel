@@ -61,7 +61,7 @@ http://localhost:8080
 
 显示Vue项目的默认界面
 
-![image-20180918213857493](/Users/vonzee/gitRepos/qunar-travel/note/assets/image-20180918213857493.png)
+![image-20180918213857493](./assets/image-20180918213857493.png)
 
 
 
