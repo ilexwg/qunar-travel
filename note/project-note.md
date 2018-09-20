@@ -281,3 +281,11 @@ proxyTable: { // 在proxyTable中增加如下代码
 npm install better-scroll --save
 ```
 
+
+
+## 15. 安装vuex
+
+```bash
+npm install vuex --save
+```
+
