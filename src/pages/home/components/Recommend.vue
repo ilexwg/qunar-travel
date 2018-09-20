@@ -5,7 +5,9 @@
       热销推荐
     </div>
     <ul>
-      <li
+      <router-link
+        :to="'/detail/' + item.id"
+        tag="li"
         class="item border-bottom"
         v-for="item of list"
         :key="item.id">
@@ -15,7 +17,7 @@
           <p class="item-desc">{{ item.desc }}</p>
           <button class="item-button">查看详情</button>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
