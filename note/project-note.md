@@ -344,3 +344,9 @@ proxyTable: {
 npm install babel-polyfill --save
 ```
 
+
+
+## 19. Vue-awesome
+
+https://github.com/Justineo/vue-awesome
+
