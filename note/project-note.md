@@ -289,3 +289,58 @@ npm install better-scroll --save
 npm install vuex --save
 ```
 
+
+
+## 16. Vue项目接口联调
+
+修改config目录下index.js文件, 将mock数据转向真实服务器数据
+
+```javascript
+// 原始代码
+proxyTable: {
+      '/api': {
+        target: 'http://localhost:8080',
+        pathRewrite: {
+          '^/api': '/static/mock'
+        }
+      }
+    },
+
+// 修改后的代码
+proxyTable: {
+      '/api': {
+        target: 'http://localhost:80', // 真实环境换成服务器IP或者外网域名
+      }
+    },
+```
+
+
+
+## 17. 修改package.json文件
+
+```json
+// 原始代码  
+"scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "lint": "eslint --ext .js,.vue src",
+    "build": "node build/build.js"
+  },
+
+// 修改后代码
+  "scripts": {
+    "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --config build/webpack.dev.conf.js", // 修改此行
+    "start": "npm run dev",
+    "lint": "eslint --ext .js,.vue src",
+    "build": "node build/build.js"
+  },
+```
+
+
+
+## 18. 如果不支持Promise的解决办法
+
+```bash
+npm install babel-polyfill --save
+```
+
